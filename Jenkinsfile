@@ -40,7 +40,8 @@ pipeline {
         stage("Build Docker Image") {
             steps {
                 script {
-                    docker.build("${DOCKER_IMAGE}:${DOCKER_TAG}", "-f Dockerfile .")
+                    // docker.build("${DOCKER_IMAGE}:${DOCKER_TAG}", "-f Dockerfile .")
+                    sh "docker build -t ${DOCKER_IMAGE}:${DOCKER_TAG} ."
                 }
             }
         }
