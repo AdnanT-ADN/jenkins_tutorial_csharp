@@ -16,6 +16,14 @@ pipeline {
             }
         }
 
+        stage("Set Up PATH") {
+            steps {
+                script {
+                    env.PATH = "/home/adn/.asdf/installs/dotnet-core/8.0.403/./dotnet"
+                }
+            }
+        }
+
         stage("Build .NET Application") {
             steps {
                 script {
