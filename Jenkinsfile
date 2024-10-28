@@ -50,17 +50,17 @@ pipeline {
 
     post {
         always {
-            echo "Always"
-            sh "docker system prune -f"
+            echo "Always Operation"
+            script {
+                sh "docker system prune -f"
+            }
         }
 
         success {
-            echo "Success"
             echo "Feature Build Successful."
         }
         
         failure {
-            echo "Fail"
             echo "Feature Build Unsuccessful."
         }
     }
