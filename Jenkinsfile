@@ -39,16 +39,19 @@ pipeline {
 
     }
 
-    always {
-        sh "docker system prune -f"
+    post {
+        always {
+            sh "docker system prune -f"
+        }
+
+        success {
+            echo "Feature Build Successful."
+        }
+        
+        failure {
+            echo "Feature Build Unsuccessful."
+        }
     }
 
-    success {
-        echo "Feature Build Successful."
-    }
-    
-    failure {
-        echo "Feature Build Unsuccessful."
-    }
 
 }
