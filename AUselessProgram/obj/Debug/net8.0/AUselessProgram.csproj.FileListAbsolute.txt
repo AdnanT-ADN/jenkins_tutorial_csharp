@@ -1,0 +1,15 @@
+/home/adn/Documents/Programming/Learning/Docker/c_sharp_jenkins_pt3/jenkins_tutorial_csharp/AUselessProgram/bin/Debug/net8.0/AUselessProgram
+/home/adn/Documents/Programming/Learning/Docker/c_sharp_jenkins_pt3/jenkins_tutorial_csharp/AUselessProgram/bin/Debug/net8.0/AUselessProgram.deps.json
+/home/adn/Documents/Programming/Learning/Docker/c_sharp_jenkins_pt3/jenkins_tutorial_csharp/AUselessProgram/bin/Debug/net8.0/AUselessProgram.runtimeconfig.json
+/home/adn/Documents/Programming/Learning/Docker/c_sharp_jenkins_pt3/jenkins_tutorial_csharp/AUselessProgram/bin/Debug/net8.0/AUselessProgram.dll
+/home/adn/Documents/Programming/Learning/Docker/c_sharp_jenkins_pt3/jenkins_tutorial_csharp/AUselessProgram/bin/Debug/net8.0/AUselessProgram.pdb
+/home/adn/Documents/Programming/Learning/Docker/c_sharp_jenkins_pt3/jenkins_tutorial_csharp/AUselessProgram/obj/Debug/net8.0/AUselessProgram.GeneratedMSBuildEditorConfig.editorconfig
+/home/adn/Documents/Programming/Learning/Docker/c_sharp_jenkins_pt3/jenkins_tutorial_csharp/AUselessProgram/obj/Debug/net8.0/AUselessProgram.AssemblyInfoInputs.cache
+/home/adn/Documents/Programming/Learning/Docker/c_sharp_jenkins_pt3/jenkins_tutorial_csharp/AUselessProgram/obj/Debug/net8.0/AUselessProgram.AssemblyInfo.cs
+/home/adn/Documents/Programming/Learning/Docker/c_sharp_jenkins_pt3/jenkins_tutorial_csharp/AUselessProgram/obj/Debug/net8.0/AUselessProgram.csproj.CoreCompileInputs.cache
+/home/adn/Documents/Programming/Learning/Docker/c_sharp_jenkins_pt3/jenkins_tutorial_csharp/AUselessProgram/obj/Debug/net8.0/AUselessProgram.sourcelink.json
+/home/adn/Documents/Programming/Learning/Docker/c_sharp_jenkins_pt3/jenkins_tutorial_csharp/AUselessProgram/obj/Debug/net8.0/AUselessProgram.dll
+/home/adn/Documents/Programming/Learning/Docker/c_sharp_jenkins_pt3/jenkins_tutorial_csharp/AUselessProgram/obj/Debug/net8.0/refint/AUselessProgram.dll
+/home/adn/Documents/Programming/Learning/Docker/c_sharp_jenkins_pt3/jenkins_tutorial_csharp/AUselessProgram/obj/Debug/net8.0/AUselessProgram.pdb
+/home/adn/Documents/Programming/Learning/Docker/c_sharp_jenkins_pt3/jenkins_tutorial_csharp/AUselessProgram/obj/Debug/net8.0/AUselessProgram.genruntimeconfig.cache
+/home/adn/Documents/Programming/Learning/Docker/c_sharp_jenkins_pt3/jenkins_tutorial_csharp/AUselessProgram/obj/Debug/net8.0/ref/AUselessProgram.dll
