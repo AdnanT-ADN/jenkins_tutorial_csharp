@@ -4,7 +4,7 @@ pipeline {
 
     environment {
         DOCKER_REGISTRY = "MY_REGISTRY"
-        DOCKER_IMAGE = "MY_REGISTRY/DOCKER_C_SHARP"
+        DOCKER_IMAGE = "docker_csharp_test"
         DOCKER_TAG = "latest"
     }
 
