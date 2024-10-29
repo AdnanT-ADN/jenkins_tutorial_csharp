@@ -29,7 +29,8 @@ pipeline {
             steps {
                 script {
                     // def dotnetPath = "/home/adn/.asdf/installs/dotnet-core/8.0.403/./dotnet"
-                    sh "dotnet clean"
+                    // sh "dotnet clean"
+                    dotnet clean
                     sh "dotnet restore"
                     sh "dotnet build --configuration Release"
                     sh "dotnet publish --configuration Release -o /App/out"
