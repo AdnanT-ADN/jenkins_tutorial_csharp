@@ -15,23 +15,24 @@ pipeline {
             }
         }
 
-        // stage("Set Up PATH") {
-        //     steps {
-        //         script {
-        //             // env.PATH = "/home/adn/.asdf/installs/dotnet-core/8.0.403/./dotnet"
-        //             // env.PATH = "/home/adn/.asdf/installs/dotnet-core/8.0.403/./dotnet:/usr/bin:/usr/local/bin:/bin"
-        //             // env.PATH = "/home/adn/.asdf/installs/dotnet-core/8.0.403:/usr/local/bin:/usr/bin:/bin"
-        //         }
-        //     }
-        // }
+        stage("Set Up PATH") {
+            steps {
+                script {
+                    // env.PATH = "/home/adn/.asdf/installs/dotnet-core/8.0.403/./dotnet"
+                    // env.PATH = "/home/adn/.asdf/installs/dotnet-core/8.0.403/./dotnet:/usr/bin:/usr/local/bin:/bin"
+                    // env.PATH = "/home/adn/.asdf/installs/dotnet-core/8.0.403:/usr/local/bin:/usr/bin:/bin"
+                }
+            }
+        }
 
         stage("Build .NET Application") {
             steps {
                 script {
-                    sh "dotnet clean"
-                    sh "dotnet restore"
-                    sh "dotnet build --configuration Release"
-                    sh "dotnet publish --configuration Release -o /App/out"
+                    def dotnetPath = "/home/adn/.asdf/installs/dotnet-core/8.0.403/./dotnet"
+                    sh "PATH=${dotnetPath}:$PATH dotnet clean"
+                    sh "PATH=${dotnetPath}:$PATH dotnet restore"
+                    sh "PATH=${dotnetPath}:$PATH dotnet build --configuration Release"
+                    sh "PATH=${dotnetPath}:$PATH dotnet publish --configuration Release -o /App/out"
                     // sh "dotnet publish --configuration Release -o ./publish"
                 }
             }
