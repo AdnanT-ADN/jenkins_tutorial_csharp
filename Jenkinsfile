@@ -28,11 +28,11 @@ pipeline {
         stage("Build .NET Application") {
             steps {
                 script {
-                    def dotnetPath = "/home/adn/.asdf/installs/dotnet-core/8.0.403/./dotnet"
-                    sh "PATH=${dotnetPath}:$PATH dotnet clean"
-                    sh "PATH=${dotnetPath}:$PATH dotnet restore"
-                    sh "PATH=${dotnetPath}:$PATH dotnet build --configuration Release"
-                    sh "PATH=${dotnetPath}:$PATH dotnet publish --configuration Release -o /App/out"
+                    // def dotnetPath = "/home/adn/.asdf/installs/dotnet-core/8.0.403/./dotnet"
+                    sh "dotnet clean"
+                    sh "dotnet restore"
+                    sh "dotnet build --configuration Release"
+                    sh "dotnet publish --configuration Release -o /App/out"
                     // sh "dotnet publish --configuration Release -o ./publish"
                 }
             }
