@@ -45,7 +45,8 @@ pipeline {
             steps {
                 script {
                     // docker.build("${DOCKER_IMAGE}:${DOCKER_TAG}", "-f Dockerfile .")
-                    docker "build -t ${DOCKER_IMAGE}:${DOCKER_TAG} ."
+                    // docker "build -t ${DOCKER_IMAGE}:${DOCKER_TAG} ."
+                    docker.build("${DOCKER_IMAGE}:${DOCKER_TAG}", "./AUselessProgram")
                 }
             }
         }
