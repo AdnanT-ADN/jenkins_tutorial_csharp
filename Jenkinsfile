@@ -35,11 +35,13 @@ pipeline {
                     // dotnet "build --configuration Release"
                     // dotnet "publish --configuration Release -o /App/out"
                     // dotnet "publish --configuration Release -o ./publish"
-                    sh "dotnet clean ./AUselessProgram/AUselessProgram.csproj"
-                    sh "dotnet restore"
-                    sh "dotnet build --configuration Release"
-                    sh "dotnet publish --configuration Release -o /App/out"
-                    sh "dotnet publish --configuration Release -o ./publish"
+                    dir("./AUselessProgram") {
+                        sh "dotnet clean"
+                        sh "dotnet restore"
+                        sh "dotnet build --configuration Release"
+                        sh "dotnet publish --configuration Release -o /App/out"
+                        sh "dotnet publish --configuration Release -o ./publish"
+                    }
                 }
             }
         }
