@@ -18,7 +18,7 @@ pipeline {
         stage("Set Up PATH") {
             steps {
                 script {
-                    env.PATH = "/home/adn/.asdf/installs/dotnet-core/8.0.403/./dotnet"
+                    env.PATH = "/usr/bin:/home/adn/.asdf/installs/dotnet-core/8.0.403/./dotnet"
                     // env.PATH = "/home/adn/.asdf/installs/dotnet-core/8.0.403:/usr/local/bin:/usr/bin:/bin"
                 }
             }
