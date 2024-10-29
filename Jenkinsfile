@@ -3,7 +3,6 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_REGISTRY = "MY_REGISTRY"
         DOCKER_IMAGE = "docker_csharp_test"
         DOCKER_TAG = "latest"
     }
@@ -19,7 +18,8 @@ pipeline {
         stage("Set Up PATH") {
             steps {
                 script {
-                    env.PATH = "/home/adn/.asdf/installs/dotnet-core/8.0.403/./dotnet"
+                    // env.PATH = "/home/adn/.asdf/installs/dotnet-core/8.0.403/./dotnet"
+                    env.PATH = "/home/adn/.asdf/installs/dotnet-core/8.0.403:/usr/local/bin:/usr/bin:/bin"
                 }
             }
         }
@@ -30,7 +30,8 @@ pipeline {
                     sh "dotnet clean"
                     sh "dotnet restore"
                     sh "dotnet build --configuration Release"
-                    sh "dotnet publish --configuration Release -o ./publish"
+                    sh "dotnet publish --configuration Release -o /App/out"
+                    // sh "dotnet publish --configuration Release -o ./publish"
                 }
             }
         }
@@ -52,7 +53,7 @@ pipeline {
         always {
             echo "Always Operation"
             script {
-                sh "docker system prune -f"
+                sh "docker system prune -f || true"
             }
         }
 
