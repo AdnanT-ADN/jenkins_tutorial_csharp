@@ -60,7 +60,7 @@ pipeline {
         always {
             echo "Always Operation"
             script {
-                sh "docker system prune -f || true"
+                docker "system prune -f || true"
             }
         }
 
